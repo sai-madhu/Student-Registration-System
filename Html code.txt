@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register student details and manage records efficiently.</p>
+    </header>
+
+    <main>
+        <section id="registration">
+            <h2>Register a New Student</h2>
+            <form id="studentForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" required>
+
+                <label for="studentID">Student ID:</label>
+                <input type="number" id="studentID" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="contact">Contact No:</label>
+                <input type="tel" id="contact" required pattern="\d{10}">
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section id="studentRecords">
+            <h2>Student Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="recordTable">
+                    <!-- Dynamic content will appear here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="Dom.js"></script>
+</body>
+</html>
